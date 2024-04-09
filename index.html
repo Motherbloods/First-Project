@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+}
+
+nav {
+    background-color: #148ceb;
+    padding: 20px;
+}
+
+nav ul {
+    padding-inline: 1rem;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+main figure img {
+    display: block;
+    margin: auto;
+    width: 100%; 
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+main {
+    z-index: -1;
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-content {
+    width: 75%;
+    box-sizing: content-box;
+    border: 1px solid #B5B5B5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 36px 1px #b5b5b5b5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h2,h4 {
+    padding-bottom: 15px;
+}
+
+h2 {
+    padding-top: 15px;
+}
+
+p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+article ul, article ol {
+    padding-left: 35px;
+}
+
+ol, ul {
+    line-height: 25px;
+    
+}
+
+.main-aside {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.name-card {
+    border: 1px solid #B5B5B5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 36px 1px #b5b5b5b5;
+    height: auto;
+    display: flex;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 0px 20px;
+    
+}
+
+.daftar-resep {
+    border: 1px solid #B5B5B5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 36px 1px #b5b5b5b5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+aside ol li {
+    border-bottom: 1px solid #B5B5B5;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+
+aside ol {
+    padding: 15px 0px 15px 15px;
+    
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: auto;
+    background-color: #148ceb;
+    align-items: center;
+    color: white;
+}
+
+.footer-kami {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-footer {
+    padding: 20px 20px 0px 20px
+}
+
+@media screen and (max-width: 500px) {
+main, .main-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+}
+
+
+.main-content {
+    padding: 20px 40px;
+
+}
+
+.main-aside {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.name-card {
+    margin-top: 20px;
+}
+
+
+nav li {
+    font-size: 17px;
+    
+}
+
+nav ul {
+    padding-inline-start: 1rem;
+}
+
+footer {
+    font-size: 14px;
+   }
+
+}
+
+@media screen and (max-width: 400px) {
+    nav ul {
+        padding-inline-start: 0rem;
+    }
+
+    .main-content {
+        padding: 20px 30px;
+    
+    }
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Kesehatan</li>
+                <li>Olahraga</li>
+                <li>Tentang Kami</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="display">
+        <article class="main-content">
+                <h1>Resep Membuat Sayur Bening</h1>
+                <figure>
+                    <img src="./assets/sayur_bening.jpg" />
+                </figure>
+                <p>Sayur bening, sering kali jadi menu andalan ibu rumah tangga disaat ada anggota keluarga yang sedang sakit. Ternyata sayur bening memang mempunyai manfaat baik ketika tubuh kurang sehat. Dilansir dari SehatQ, bahan-bahan sayur bening punya manfaat untuk meredakan gejala flu, mencegah dehidrasi, memenuhi kebutuhan nutrisi dan menghangatkan tubuh. Nggak heran, sayur bening ampuh dikonsumsi ketika badan kurang fit.</p>
+                <p>Selain itu, sayur bening juga termasuk jenis olahan sayur yang paling disukai oleh keluarga, karena citarasa gurih dan kehangatan kuah yang memberikan rasa rileks. Resep sayur bening ini cocok untuk dimasak di pagi hari sebelum berangkat ngantor dan bisa disajikan sebagai menu sarapan, makan siang dan makan malam. Nggak perlu repot, untuk membuat sayur bening yang lezat, kamu hanya perlu waktu singkat untuk membuatnya. Yuk, langsung kita cari tahu resep sayur bening selengkapnya!  </p>
+            <article>
+                <h2>Bahan</h2>
+                <ul>
+                    <li>1 liter air</li>
+                    <li>5 butir bawang merah, iris halus</li>
+                    <li>5 cm temu kunci, memarkan</li>
+                    <li>1 sdm gula pasir</li>
+                    <li>1 sdt garam</li>
+                    <li>1 buah jagung manis, potong potong</li>
+                    <li>100 gr wortel, iris tipis 0,5cm</li>
+                    <li>300 gr bayam, siangi daunnya</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Cara Membuat</h2>
+                <ol>
+                    <li>Siapkan panci, masukkan air dan bumbu secara bersamaan.</li>
+                    <li>Tunggu mendidih, lalu masukkan</li>
+                    <li>Masak sebentar, koreksi rasa dan sajikan</li>
+                </ol>
+            </article>
+        </article>
+        <aside class="main-aside">
+            <div class="name-card">
+                    <figure>
+                        <img class="fotoku" src="./assets/profile.jpg" />
+                        <h4>Habib Risky Kurniawan</h4>
+                        <h4>Universitas Duta Bangsa</h4>
+                    </figure>
+            </div>
+            <div class="daftar-resep">  
+                <h3>Daftar Resep Menu</h3> 
+                <ol>
+                    <li>Sayur Bayam</li>
+                    <li>Sayur Asem</li>
+                    <li>Sayur Lodeh</li>
+                    <li>Sayur Sambel Goreng</li>
+                    <li>Sayur Terik</li>
+                    <li>Gulai kambing</li>
+                    <li>Gulai sapi</li>
+                    <li>Oseng-Oseng Tempe</li>
+                </ol>
+            </div>
+        </aside>
+    </main> 
+    <footer>
+        <div class="footer-kami">
+            <div class="detail-footer">
+                <h3>Lokasi Kami</h3>
+                <p>Surakarta, Jawa Tengah</p>
+            </div>
+            <div class="detail-footer">
+                <h3>Kunjungi kami :</h3>
+                <p>Instagram : habibrk_</p>
+            </div>
+        </div>
+        <div>
+            <p>Resep Makanan &#169; 2023, Bumbu Resto</p>
+        </div>
+    </footer>
+</body>
+</html>
